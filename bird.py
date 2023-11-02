@@ -49,9 +49,9 @@ class Run:
     @staticmethod
     def draw(bird):
         if bird.dir == 1:
-            bird.image.clip_draw(int(bird.frame) * 183, int(bird.action) * 168, 183, 168, bird.x, bird.y, 80, 70)
+            bird.image.clip_draw(int(bird.frame) * 183, int(bird.action) * 168, 183, 168, bird.x, bird.y, 40, 40)
         if bird.dir == -1:
-            bird.image.clip_composite_draw(int(bird.frame) * 183, int(bird.action) * 168, 183, 168, 0, 'h', bird.x, bird.y, 80, 70)
+            bird.image.clip_composite_draw(int(bird.frame) * 183, int(bird.action) * 168, 183, 168, 0, 'h', bird.x, bird.y, 40, 40)
 
 
 
